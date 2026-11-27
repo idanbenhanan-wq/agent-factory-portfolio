@@ -1,10 +1,12 @@
-# Agent Factory | מערכת לתיאום סוכני AI
+# Agent Factory | Agent Execution Harness
 
-**From a client requirement to a controlled delivery workflow, with human approval gates.**
+**AI agent execution and control, with human approval gates.**
 
 **Idan Ben Hanan | Business Operations · Project Management · AI Implementation**
 
-**Status: in development.** A curated portfolio of an agent orchestration project, with implemented control components and a locally verified stop mechanism. Full multi-agent delivery is not yet verified.
+**Status: in development.** AI-assisted design and development of an Agent Execution Harness: role permissions, human approval gates, requirements locking and stop controls. Control components have been implemented and tested in defined scenarios; the full multi-agent delivery workflow is still in development.
+
+Documentation update: **27 November 2026**. This is a selected-code portfolio, not a production system.
 
 <div dir="rtl">
 
@@ -13,6 +15,10 @@
 בניית פתרון בעזרת כמה סוכני AI דורשת תיאום: מי מנסח את הדרישות, מי בונה, מי בודק, מי מאשר שינויים ומתי עוצרים. ללא הגדרות ברורות, קל לאבד שליטה על היקף, איכות ועלות.
 
 **Agent Factory** מתוכנן לרכז את העבודה מול סוכן מנהל אחד, המנתב משימות לסוכני אפיון, עיצוב, בנייה ו-QA. המשתמש מאשר בארבעה שערים, לפני התקדמות לשלבים הבאים.
+
+## מה נבנה בפועל
+
+אפיון והובלת פיתוח בסיוע Claude Code של מעטפת ביצוע ובקרה לסוכני AI, הכוללת ניהול הרשאות, שערי אישור אנושי, נעילת דרישות ומנגנון עצירה. רכיבי בקרה מומשו ונבדקו בתרחישים מוגדרים; תהליך העבודה המלא עדיין בפיתוח.
 
 ## התרומה שלי
 
@@ -27,7 +33,8 @@
 | חמישה סוכני ליבה | קובצי `pm`, `spec`, `design`, `builder`, `qa` נצפו במאגר המקור; הגדרת pm נכללת כאן כדוגמה |
 | חוזה לסוכן המנהל | קיים קובץ המגדיר ניתוב, תוצרים, שערים, הסלמה והגבלת סבבי QA |
 | מתג עצירה ו-hook | קוד נכלל כאן; 18 בדיקות קיימות הורצו מחדש וכולן עברו |
-| אישור שערים ונעילת מסמכים | קובץ `gate.py` נצפה; יומן ההתקדמות מתאר מימוש ובדיקות חלקיות. לא אומת מחדש במסגרת הכנת המאגר |
+| הרשאות, אישור שערים ונעילת מסמכים | מסמך המצב שסופק ב-27.11 מתאר מימוש `path_guard`, `gate.py` ונעילה לאחר שער 1, עם בדיקות רכיב ותרחישים חיים מוגדרים. אלה דיווחי מקור, לא אימות מחדש במסגרת עדכון זה |
+| בדיקות במאגר המקור | מסמך המצב מדווח על 113 בדיקות ב-Windows: 111 עברו ו-2 דולגו ב-27.11. קוד הבדיקות המלא והראיות אינם כלולים כאן; אין לערבב נתון זה עם 18 הבדיקות שנשחזרו במאגר ההצגה |
 | תיאום מלא בין הסוכנים | עדיין לא אומתה ריצה של דרישה עד למסירה |
 | מדדי עלות, דשבורד ו-ROI | חלק מהתכנון; אין כאן תוצאות מדידה או הוכחת כדאיות |
 

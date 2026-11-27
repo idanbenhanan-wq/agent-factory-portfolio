@@ -1,12 +1,23 @@
 # Status and evidence
 
-Prepared: **2026-11-24**.
+Prepared: **2026-11-24**. Documentation review updated: **2026-11-27**.
 
 ## Portfolio scope
 
-Agent Factory is an orchestration project in development. This repository includes selected source components, a PM agent example and a curated architecture summary. It is not the full private project or a production release.
+Agent Factory is an Agent Execution Harness and orchestration project in development. This repository includes selected source components, a PM agent example and a curated architecture summary. It is not the full private project or a production release.
 
 The original private repository and its history were not made public. Machine names, local user paths, private document identifiers, session identifiers and runtime logs from the internal handoff were excluded.
+
+## Source-document update on 27 November 2026
+
+The project owner supplied BUILD_PLAN.md and HANDOFF.md for review. This update summarizes those documents without publishing the private files or independently rerunning their tests.
+
+- HANDOFF reports implemented path-based write controls, human gate approvals and requirements locking after Gate 1, with selected live checks on specified Claude Code versions.
+- It reports 113 component tests on Windows: 111 passed and two skipped. Skipped checks remain unverified. This is a reported source-project result, separate from the 18 stop tests reproduced in this public portfolio on 24 November.
+- The L1 stop mechanism blocks new tool calls in the documented checks; it does not establish termination of model calls or processes already running.
+- Full orchestration and end-to-end client delivery are not established. The readiness checklist remains incomplete; cost tracking, dashboards and ROI are not demonstrated.
+- The supplied documents contain stale headings and statuses. They are not evidence of the latest local runtime state. Earlier-version observations must not be presented as universal guarantees.
+- This public repository still contains selected components only, not the full gate mechanism or an installable orchestration system.
 
 ## Evidence levels
 
